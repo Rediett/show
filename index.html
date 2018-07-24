@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SharkCage</title>
+	<link rel="icon" href="https://pbs.twimg.com/profile_images/1016814904383139840/2CdaitAm.jpg">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+	<style type="text/css">
+		body{
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			background: linear-gradient(145deg, #1000ff, #ff39de);
+			background-repeat: no-repeat;
+			background-size: 100%, auto;
+			min-height: calc(100vh - 100px);
+			background-attachment: fixed;
+		}
+		.container{
+			padding-top: 20px;
+			display: grid;
+			grid-gap: 30px;
+			grid-template-columns: 27% 73%;
+		}
+		#top{
+			border-radius: 0;
+			height: 500px;
+			background: url(https://images.pexels.com/photos/726478/pexels-photo-726478.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			padding-top: 170px;
+		}
+		#top h1{
+			font-size: 170px;
+		}
+		#it2 p{
+			font-size: 20px;
+			background: lightgray;
+			padding: 20px;
+			border-radius: 9px;
+		}
+		.active{
+			background: linear-gradient(145deg, #1000ff, #ff39de);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		#nav{
+			background: linear-gradient(180deg, gray, lightgray);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			height: 50px;
+			width: 100%;
+			padding: 6px;
+			padding-left: 20px;
+		}
+		#nav a{
+			text-decoration: none;
+			color: white;
+			font-size: 27px;
+			padding: 10px;
+		}
+		#nav a:hover{
+
+		}
+	</style>
+</head>
+<body>
+	<div class="jumbotrun" id="top"><center>
+		<h1><span style="color: blue">Shark</span><span style="color: white">Cage</span></h1>
+	</center>
+	</div>
+	<div id="home">
+	<div class="jumbotrun" id="nav">
+		<a onclick="Home()" class="active">Home</a>
+		<a onclick="Contact()">Contact</a>
+	</div>
+	<div class="container">
+		<div class="item"><a href="https://discordapp.com/"><img src="https://pbs.twimg.com/profile_images/1016814904383139840/2CdaitAm.jpg"></a></div>
+		<div class="item" id="it2"><p>Sharks are a group of elasmobranch fish characterized by a cartilaginous skeleton, five to seven gill slits on the sides of the head, and pectoral fins that are not fused to the head. Modern sharks are classified within the clade Selachimorpha (or Selachii) and are the sister group to the rays. However, the term "shark" has also been used for extinct members of the subclass Elasmobranchii outside the Selachimorpha, such as Cladoselache and Xenacanthus, as well as other Chondrichthyes such as the holocephalid eugenedontidans.<br><br>Under this broader definition, the earliest known sharks date back to more than 420 million years ago.[2] Acanthodians are often referred to as "spiny sharks"; though they are not part of Chondrichthyes proper, they are a paraphyletic assemblage leading to cartilaginous fish as a whole. Since then, sharks have diversified into over 500 species. They range in size from the small dwarf lanternshark (Etmopterus perryi), a deep sea species of only 17 centimetres (6.7 in) in length, to the whale shark (Rhincodon typus), the largest fish in the world, which reaches approximately 12 metres (40 ft) in length. Sharks are found in all seas and are common to depths of 2,000 metres (6,600 ft).<br> They generally do not live in freshwater although there are a few known exceptions, such as the bull shark and the river shark, which can survive and be found in both seawater and freshwater.[3] Sharks have a covering of dermal denticles that protects their skin from damage and parasites in addition to improving their fluid dynamics. They have numerous sets of replaceable teeth.[4]<br><br>Well-known species such as the great white shark, tiger shark, blue shark, mako shark, thresher shark, and hammerhead shark are apex predators—organisms at the top of their underwater food chain. Many shark populations are threatened by human activities.</p>
+		</div>
+	</div>
+</div>
+<div id="contact">
+	<div class="jumbotrun" id="nav">
+		<a onclick="Home()" >Home</a>
+		<a onclick="Contact()" class="active">Contact</a>
+	</div>
+	<h1>Hi, i am your contact page!!</h1>
+</div>
+	<script>
+		var h = document.getElementById('home');
+		var c = document.getElementById('contact');
+		h.style.display = "block";
+		c.style.display = "none";
+
+		function Home() {
+			h.style.display = "block";
+			c.style.display = "none";
+		}
+		function Contact() {
+			h.style.display = "none";
+			c.style.display = "block";
+		}
+	</script>
+</body>
+</html>
